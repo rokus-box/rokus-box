@@ -1,0 +1,27 @@
+<main>
+  <img
+    ngSrc="assets/rokusbox.png"
+    [width]="300"
+    [height]="300"
+    priority=""
+    alt="Roku's Box icon"
+  />
+  <h1>Step into my box!</h1>
+  <mat-divider />
+  <p>This place is where I keep my projects, you know, my box.</p>
+  <a mat-stroked-button color="accent" routerLink="/roku-kim">
+    About me
+    <mat-icon>open_in_new</mat-icon>
+  </a>
+  <br>
+  <mat-divider />
+  <h4>Here are some of my projects:</h4>
+  <br>
+  <a routerLink="projekts/butane">
+    <app-morph-button
+      subTitle="Butane"
+    >
+      <app-svg-key />
+    </app-morph-button>
+  </a>
+</main>
