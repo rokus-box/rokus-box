@@ -7,11 +7,30 @@ export const routes: Routes = [
       import('./home/home.component').then((m) => m.HomeComponent),
   },
   {
-    path: 'projekts/butane',
-    loadComponent: () =>
-      import('./projekts/butane/butane.component').then(
-        (m) => m.ButaneComponent,
-      ),
+    path: 'projekts',
+    children: [
+      {
+        path: 'butane',
+        loadComponent: () =>
+          import('./projekts/butane/butane.component').then(
+            (m) => m.ButaneComponent,
+          ),
+      },
+      {
+        path: 'redi-rs',
+        loadComponent: () =>
+          import('./projekts/redirs/redirs.component').then(
+            (m) => m.RedirsComponent,
+          ),
+      },
+      {
+        path: 'hexarch',
+        loadComponent: () =>
+          import('./projekts/hexarch/hexarch.component').then(
+            (m) => m.HexarchComponent,
+          ),
+      },
+    ],
   },
   {
     path: 'roku-kim',

@@ -1,12 +1,12 @@
 <span class="icon">
   <div class="layer">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span style="background: black">
+    <span [style]="{ borderColor: color }"></span>
+    <span [style]="{ borderColor: color }"></span>
+    <span [style]="{ borderColor: color }"></span>
+    <span [style]="{ borderColor: color }"></span>
+    <span style="background: black" [style]="{ borderColor: color }">
       <ng-content />
     </span>
   </div>
-  <div class="text">{{ subTitle }}</div>
+  <div class="text" [style]="{ color: textColor }" >{{ subTitle }}</div>
 </span>

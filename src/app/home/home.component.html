@@ -15,11 +15,29 @@
   </a>
   <mat-divider />
   <h4>Here are some of my projects:</h4>
-  <a routerLink="projekts/butane">
-    <app-morph-button
-      subTitle="Butane"
-    >
-      <app-svg-key />
-    </app-morph-button>
-  </a>
+  <div>
+    <a routerLink="projekts/butane">
+      <app-morph-button
+        textColor="#ef6c00"
+        subTitle="Butane">
+        <app-svg-key />
+      </app-morph-button>
+    </a>
+    <div style="border-left: 1px solid #ccc; height: 3.5em;"></div>
+    <a routerLink="projekts/redi-rs">
+      <app-morph-button
+        color="black"
+        subTitle="redi&minus;rs">
+        <app-svg-redirs />
+      </app-morph-button>
+    </a>
+    <a routerLink="projekts/hexarch">
+      <app-morph-button
+        color="#74cedd"
+        textColor="dodgerblue"
+        subTitle="Hexarch">
+        <app-svg-hexarch />
+      </app-morph-button>
+    </a>
+  </div>
 </main>

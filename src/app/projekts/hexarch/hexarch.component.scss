@@ -6,17 +6,8 @@
     align-items: center;
 
     mat-divider {
-      width: 50%;
       margin: 1em;
+      width: 50%;
     }
-
-    div {
-      display: flex;
-      gap: 2em;
-    }
-
-     h4 {
-      margin-bottom: 2em;
-     }
   }
 }

@@ -1,0 +1,36 @@
+<main>
+  <h1>redi-rs</h1>
+  <p>
+    redi-rs is a Lightweight Redis client with connection pooling written in
+    Rust and 100% memory safe
+  </p>
+  <p>
+    I created this library to learn networking with Rust, working with threads,
+    <br />
+    streams and how to make these thread-safe. I was wondering what could I do
+    with raw <br />
+    TCP connections and I thought that a Redis client with connection pooling would
+    be a good <br />
+    idea to learn all these things. :)
+  </p>
+  <p>
+    In the following example, this client establishes a connection pool of 10
+    connections <br />
+    to a Redis server running on localhost:6379 and then executes <br />
+    commands by using the connection pool and gives back the connection to the
+    <br />
+    pool. If the pool does not have any available connections, the client will
+    <br />
+    create a new connection and dismiss it after the command is executed.
+  </p>
+  <pre><code class="language-rust">{{ redirsExampleCode }}</code></pre>
+  <a
+    target="_blank"
+    mat-stroked-button
+    color="primary"
+    href="https://github.com/roku-on-it/redi-rs"
+  >
+    Go to redi-rs
+    <mat-icon>open_in_new</mat-icon>
+  </a>
+</main>

@@ -1,0 +1,17 @@
+:host {
+  main {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    code {
+      border-radius: 5px;
+    }
+
+    mat-divider {
+      margin: 1em;
+      width: 50%;
+    }
+  }
+}
