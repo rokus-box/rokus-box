@@ -33,7 +33,7 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'roku-kim',
+    path: 'who-is-roku',
     loadComponent: () =>
       import('./roku-kim/roku-kim.component').then((m) => m.RokuKimComponent),
   },
